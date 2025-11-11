@@ -1,0 +1,7 @@
+fsm_config.c:12:5:inc99	16	static
+fsm_config.c:15:6:config_init_new_from_current	4	static
+fsm_config.c:27:6:config_handle_button1_inc_new	8	static
+fsm_config.c:75:6:config_handle_button2_commit	8	static
+fsm_config.c:98:6:config_handle_button0_next_state	8	static
+fsm_config.c:124:6:timer2	8	static
+fsm_config.c:142:6:fsm_config_run	8	static
