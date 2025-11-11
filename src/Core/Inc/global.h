@@ -9,7 +9,7 @@
 #define INC_GLOBAL_H_
 
 //cac file.h co ban
-#include <fsm_manual.h>
+
 #include "main.h"
 #include "software_timer.h"
 #include "button.h"
@@ -21,6 +21,11 @@
 //cac file.h fsm
 #include "fsm_auto.h"
 #include "fsm_config.h"
+#include "fsm_manual.h"
+
+// file schedule
+#include "SCH_global.h"
+
 //SCAN SPEED
 #define SCAN 100
 #define INIT_RED_X 5
@@ -85,4 +90,11 @@ extern int count_x;
 extern int count_y;
 
 int inc99(int v);
+
+
+void blinky_led2(void);
+void blinky_led3(void);
+void blinky_led4(void);
+void blinky_led5(void);
+
 #endif /* INC_GLOBAL_H_ */

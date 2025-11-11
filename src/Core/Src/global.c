@@ -37,5 +37,18 @@ int current_time_y = 0;
 int count_x=0;
 int count_y=0;
 
-
+void blinky_led2(void){
+	if (isButton1Pressed(0) == 1){
+	HAL_GPIO_TogglePin(SEG_1_GPIO_Port, SEG_1_Pin);
+	}
+}
+void blinky_led3(void){
+	HAL_GPIO_TogglePin(SEG_2_GPIO_Port, SEG_2_Pin);
+}
+void blinky_led4(void){
+	HAL_GPIO_TogglePin(SEG_3_GPIO_Port, SEG_3_Pin);
+}
+void blinky_led5(void){
+	HAL_GPIO_TogglePin(SEG_4_GPIO_Port, SEG_4_Pin);
+}
 

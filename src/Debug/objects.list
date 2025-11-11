@@ -1,3 +1,4 @@
+"./Core/Src/SCH_global.o"
 "./Core/Src/button.o"
 "./Core/Src/fsm_auto.o"
 "./Core/Src/fsm_config.o"
