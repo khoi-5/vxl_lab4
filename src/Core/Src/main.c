@@ -95,10 +95,9 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	SCH_Init();
-	SCH_Add_Task(blinky_led2, 0, 2000);
-	SCH_Add_Task(blinky_led3, 10000, 0);
-	SCH_Add_Task(blinky_led4, 1000, 3000);
-	SCH_Add_Task(blinky_led5, 0, 2000);
+	SCH_Add_Task(fsm_auto_run, 0, 10);
+	SCH_Add_Task(fsm_config_run, 5000, 10);
+	SCH_Add_Task(fsm_manual_run, 5000, 10);
   while (1)
   {
     /* USER CODE END WHILE */
