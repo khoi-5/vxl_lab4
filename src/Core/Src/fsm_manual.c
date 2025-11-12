@@ -8,7 +8,7 @@
 #include <fsm_manual.h>
 void come_back_to_auto(void){
     if (isButton1Pressed(0) == 1) {
-    	status = INIT;
+    	status = TEMP;
     	display_mode_auto();
     }
 }

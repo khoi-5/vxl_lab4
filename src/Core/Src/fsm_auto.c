@@ -20,7 +20,7 @@ void button0_to_change_to_config(void){
 }
 
 void button2_to_change_to_manual(){
-    if (isButton1Pressed(2) == 1) {
+    if (isButton1LongPressed(0) == 1) {
         status = MAN_RED_GREEN;
         setTimer(2, 250);
         setTimer(9, SCAN);
@@ -36,12 +36,16 @@ void fsm_auto_run(void) {
 
         display_mode_auto();
 
-        status = RED_GREEN;
+        status = TEMP;
+
+
+        break;
+    case TEMP:
+    	status = RED_GREEN;
         setTimer(0, 1000);
         setTimer(1, time_green_y * 1000);
         set_counter_for_traffic_light(time_red_x, time_green_y);
-
-        break;
+    	break;
 
     case RED_GREEN:
         led_red_and_green();

@@ -37,6 +37,7 @@
 
 
 //che do mac dinh
+#define TEMP -1
 #define INIT 1
 #define RED_GREEN 2
 #define RED_YELLOW 3

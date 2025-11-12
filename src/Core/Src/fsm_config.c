@@ -109,7 +109,7 @@ void config_handle_button0_next_state(void){
 
     case CON_YELLOW_Y:
         set_new_time();
-        status = RED_GREEN;
+        status = TEMP;
         setTimer(0, 1000);
         setTimer(1, time_green_y * 1000);
         set_counter_for_traffic_light(time_red_x, time_green_y);
