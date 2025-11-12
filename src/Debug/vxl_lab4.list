@@ -3775,14 +3775,14 @@ int main(void)
  8001a74:	2100      	movs	r1, #0
  8001a76:	480a      	ldr	r0, [pc, #40]	; (8001aa0 <main+0x4c>)
  8001a78:	f7fe fbf2 	bl	8000260 <SCH_Add_Task>
-	SCH_Add_Task(fsm_config_run, 5000, 10);
+	SCH_Add_Task(fsm_config_run, 2000, 10);
  8001a7c:	220a      	movs	r2, #10
- 8001a7e:	f241 3188 	movw	r1, #5000	; 0x1388
+ 8001a7e:	f44f 61fa 	mov.w	r1, #2000	; 0x7d0
  8001a82:	4808      	ldr	r0, [pc, #32]	; (8001aa4 <main+0x50>)
  8001a84:	f7fe fbec 	bl	8000260 <SCH_Add_Task>
-	SCH_Add_Task(fsm_manual_run, 5000, 10);
+	SCH_Add_Task(fsm_manual_run, 2000, 10);
  8001a88:	220a      	movs	r2, #10
- 8001a8a:	f241 3188 	movw	r1, #5000	; 0x1388
+ 8001a8a:	f44f 61fa 	mov.w	r1, #2000	; 0x7d0
  8001a8e:	4806      	ldr	r0, [pc, #24]	; (8001aa8 <main+0x54>)
  8001a90:	f7fe fbe6 	bl	8000260 <SCH_Add_Task>
   while (1)
